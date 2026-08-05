@@ -1,0 +1,16 @@
+/* Small additions on top of the vendored assets/css/main.css, for
+   states that theme didn't originally need (e.g. an async form result). */
+
+.contact-status-ok,
+.contact-status-error {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-status-ok {
+  color: #6fcf97;
+}
+
+.contact-status-error {
+  color: #eb5757;
+}

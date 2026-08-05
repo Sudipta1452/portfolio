@@ -1,0 +1,19 @@
+<!doctype html>
+<!--
+  Not a real page — nobody navigates here. Netlify's build bot parses
+  HTML for data-netlify forms, but this site's actual contact form only
+  exists once React renders it client-side, which the bot can't see.
+  This static copy of the same field names exists purely so Netlify
+  registers the "contact" form and gives it somewhere to deliver
+  submissions. See src/components/articles/Contact.jsx for the real UI.
+-->
+<html>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
