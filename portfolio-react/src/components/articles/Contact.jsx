@@ -138,12 +138,12 @@ export default function Contact() {
           </a>
         </li>
         <li>
-          <a href="#" className="icon brands fa-instagram">
-            <span className="label">Instagram</span>
+          <a href="https://www.linkedin.com/in/sudipta-saha-71059b146" className="icon brands fa-linkedin-in">
+            <span className="label">LinkedIn</span>
           </a>
         </li>
         <li>
-          <a href="#" className="icon brands fa-github">
+          <a href="https://github.com/Sudipta1452" className="icon brands fa-github">
             <span className="label">GitHub</span>
           </a>
         </li>
