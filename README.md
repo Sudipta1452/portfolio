@@ -1,47 +1,115 @@
 # Sudipta1452 — Portfolio
 
-This repository contains my personal portfolio website showcasing projects, skills, and contact information.
+This repository contains my personal portfolio website built with React. It showcases selected projects, skills, and contact information.
 
 ## About
 
-I'm Sudipta, a developer who builds web projects and experiments with modern web technologies. This site lists selected projects with demos, source code, and short write-ups.
+I'm Sudipta, a developer who builds web projects and experiments with modern web technologies. This site is a single-page React application that lists projects with demos, source code, and short write-ups.
 
 ## Features
 
 - Project showcase with screenshots and links
-- Responsive layout
+- Responsive layout (mobile-first)
+- Client-side routing and smooth navigation
 - Summary of skills and technologies
 - Contact information and links to social profiles
 
 ## Technologies
 
-This site is built using standard web technologies:
+This site is built using React and standard web technologies:
 
+- React (Create React App, Vite, or Next.js)
+- JavaScript (ES6+) or TypeScript
 - HTML5
-- CSS3 (and optionally a framework like Bootstrap or Tailwind)
-- JavaScript
+- CSS3 or a utility framework like Tailwind CSS
+- Node.js and npm or Yarn for local development and builds
+
+Common libraries used in this project (if applicable):
+
+- React Router for routing
+- React Query / SWR for data fetching
+- Axios or Fetch API for HTTP requests
+- Tailwind CSS, Bootstrap, or styled-components for styling
 
 ## Project structure
 
-- index.html — homepage
-- assets/ — images, styles, scripts
-- projects/ — individual project pages or data
+- package.json — project metadata and scripts
+- public/ — static files (index.html, favicon)
+- src/ — React source code
+  - src/main.jsx or src/index.js — app entry
+  - src/App.jsx or src/App.js — root app component
+  - src/components/ — reusable components
+  - src/pages/ — page-level components
+  - src/assets/ — images, fonts, icons
+  - src/styles/ — global styles or Tailwind setup
+- README.md — this file
 
-(Adjust paths above to match the repository layout if different.)
+(Adjust paths above if your project layout is different.)
+
+## Requirements
+
+- Node.js (recommended LTS) — e.g., >=16
+- npm or Yarn
 
 ## Run locally
 
-To preview this site locally, open index.html in your browser or run a simple local server:
+1. Install dependencies:
 
 ```bash
-# Python 3
-python -m http.server 8000
-# then open http://localhost:8000
+npm install
+# or
+# yarn
 ```
+
+2. Start the development server:
+
+- Create React App:
+
+```bash
+npm start
+# opens at http://localhost:3000 by default
+```
+
+- Vite:
+
+```bash
+npm run dev
+# opens at http://localhost:5173 by default
+```
+
+- Next.js (if used):
+
+```bash
+npm run dev
+# opens at http://localhost:3000 by default
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+## Tests & Linting (if configured)
+
+```bash
+npm test
+npm run lint
+```
+
+## Deployment
+
+You can deploy the build output to common hosting providers:
+
+- Vercel — automatic deployments from GitHub
+- Netlify — connect repo or drag & drop build folder
+- GitHub Pages — use `npm run build` and publish `build/` (or use `gh-pages` package)
+
+If this project uses Next.js, follow Next.js-specific deployment guides (Vercel is recommended).
 
 ## Contributing
 
-If you'd like to suggest changes or improvements, open an issue or submit a pull request.
+Contributions are welcome. To suggest changes, open an issue or submit a pull request. Please include a short description of what you changed and why.
 
 ## Contact
 
@@ -49,4 +117,6 @@ You can reach me via my GitHub profile: https://github.com/Sudipta1452
 
 ---
 
-If you'd like, I can customize this README with a projects list, screenshots, or a live demo link. Tell me what you want shown and I'll update it.
+Notes:
+- I updated this README to reflect that the project is a React application and added instructions for common React toolchains (Create React App, Vite, Next.js). If you prefer the README to be specific to one toolchain, tell me which one and I will tailor the commands and ports accordingly.
+- I can also add a Projects section that automatically lists entries from a `projects/` directory, include screenshots, or add a live demo link if you provide the URL.
