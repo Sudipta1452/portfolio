@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/portfolio-react"
+    schedule:
+      interval: "weekly"
