@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import content from '../../../content/contact.json'
 
 const EMPTY_FORM = { name: '', email: '', message: '' }
 
@@ -57,7 +58,7 @@ export default function Contact() {
 
   return (
     <>
-      <h2 className="major">Contact</h2>
+      <h2 className="major">{content.heading}</h2>
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <p style={{ display: 'none' }}>
@@ -127,26 +128,13 @@ export default function Contact() {
         )}
       </form>
       <ul className="icons">
-        <li>
-          <a href="#" className="icon brands fa-twitter">
-            <span className="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" className="icon brands fa-facebook-f">
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/sudipta-saha-71059b146" className="icon brands fa-linkedin-in">
-            <span className="label">LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Sudipta1452" className="icon brands fa-github">
-            <span className="label">GitHub</span>
-          </a>
-        </li>
+        {content.socialLinks.map((link) => (
+          <li key={link.label}>
+            <a href={link.url} className={`icon brands ${link.icon}`}>
+              <span className="label">{link.label}</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </>
   )

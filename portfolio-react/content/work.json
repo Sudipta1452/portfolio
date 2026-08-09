@@ -1,0 +1,12 @@
+{
+  "heading": "Work Experience",
+  "image": {
+    "src": "/images/banner.png",
+    "alt": "Work Experience Image"
+  },
+  "paragraphs": [
+    "I’m currently working as a Technical Associate at NAB, where I’m supporting the rollout of a new platform and continuing to grow as a Java and Spring Boot developer.",
+    "Before NAB, I worked as a Graduate SAP Technical Consultant at Discovery Consulting, focusing on SAP BTP Extension Development and building solutions with the SAP Cloud Application Programming Model. I also have a background in full-stack development, using Java, Python, and JavaScript, with frontend experience in HTML5, CSS, Bootstrap, and React-Redux, and backend experience using the MVC pattern with the CodeIgniter framework.",
+    "Lately, I’ve been spending my own time exploring cloud engineering and agentic AI — AI systems that can plan and take actions, not just answer questions — which is the direction I want to build my career toward."
+  ]
+}

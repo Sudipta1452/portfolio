@@ -1,0 +1,86 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# NOTE: paths below are relative to the GitHub repo root, not to this
+# Netlify site's base directory ("portfolio-react", see ../../netlify.toml
+# at the true repo root). Git Gateway talks to the whole repo over the
+# GitHub API and has no concept of Netlify's base-directory build setting,
+# so every path here is prefixed with "portfolio-react/" to reach the
+# right files.
+media_folder: "portfolio-react/public/images"
+public_folder: "/images"
+
+collections:
+  - name: "intro"
+    label: "Intro Section"
+    files:
+      - file: "portfolio-react/content/intro.json"
+        label: "Intro"
+        name: "intro"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            fields:
+              - { label: "Source", name: "src", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+  - name: "work"
+    label: "Work Experience Section"
+    files:
+      - file: "portfolio-react/content/work.json"
+        label: "Work Experience"
+        name: "work"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            fields:
+              - { label: "Source", name: "src", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+  - name: "about"
+    label: "About Section"
+    files:
+      - file: "portfolio-react/content/about.json"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            fields:
+              - { label: "Source", name: "src", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - file: "portfolio-react/content/contact.json"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Social Links"
+            name: "socialLinks"
+            widget: "list"
+            fields:
+              - { label: "Platform Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Icon Class (e.g. fa-github)", name: "icon", widget: "string" }
