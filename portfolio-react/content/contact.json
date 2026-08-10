@@ -1,9 +1,15 @@
 {
   "heading": "Contact",
   "socialLinks": [
-    { "label": "Twitter", "url": "#", "icon": "fa-twitter" },
-    { "label": "Facebook", "url": "#", "icon": "fa-facebook-f" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/sudipta-saha-71059b146", "icon": "fa-linkedin-in" },
-    { "label": "GitHub", "url": "https://github.com/Sudipta1452", "icon": "fa-github" }
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sudipta-saha-71059b146",
+      "icon": "fa-linkedin-in"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Sudipta1452",
+      "icon": "fa-github"
+    }
   ]
 }
